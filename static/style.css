@@ -1,0 +1,115 @@
+/* Import Google Fonts for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* General styling for the body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* A light gray background */
+    color: #1f2937; /* Dark gray for text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* Base styles for the main content container */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 32rem; /* A reasonable max width for the container */
+    margin: 2.5rem auto;
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 700; /* Bold */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for paragraphs and descriptive text */
+.description {
+    text-align: center;
+    color: #4b5563; /* Gray-600 */
+    margin-bottom: 2rem;
+}
+
+/* Styling for form groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    color: #374151; /* Gray-700 */
+    font-weight: 600; /* Semibold */
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db; /* Gray-300 */
+    border-radius: 0.5rem;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus {
+    border-color: #3b82f6; /* Blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* Styling for the submit button */
+.form-button {
+    width: 100%;
+    background-color: #2563eb; /* Blue-600 */
+    color: #ffffff;
+    font-weight: 700; /* Bold */
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.form-button:hover {
+    background-color: #1d4ed8; /* Blue-700 */
+}
+
+/* Styling for the result page */
+.result-message {
+    font-size: 1.25rem; /* xl */
+    text-align: center;
+}
+
+.result-species {
+    color: #2563eb; /* Blue-600 */
+    font-weight: 700; /* Bold */
+    font-size: 1.5rem; /* 2xl */
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #2563eb; /* Blue-600 */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #1e40af; /* Blue-800 */
+}
+
+/* Adjustments for the result page specifically */
+.result-page-content .description {
+    margin-bottom: 0.5rem;
+}

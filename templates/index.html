@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Species Prediction</title>
+    <!-- Link to the external stylesheet located in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Main container using CSS classes for styling -->
+    <div class="container">
+        <h1>Flower Species Prediction</h1>
+        <p class="description">
+            Enter the measurements of the flower to predict its species.
+        </p>
+        
+        <!-- The form that sends data to the '/predict' route -->
+        <form action="/predict" method="POST" class="form-group">
+            <div>
+                <label for="sepal_length" class="form-label">Sepal Length (cm)</label>
+                <input type="number" id="sepal_length" name="sepal_length" step="0.1" required class="form-input">
+            </div>
+            <div>
+                <label for="sepal_width" class="form-label">Sepal Width (cm)</label>
+                <input type="number" id="sepal_width" name="sepal_width" step="0.1" required class="form-input">
+            </div>
+            <div>
+                <label for="petal_length" class="form-label">Petal Length (cm)</label>
+                <input type="number" id="petal_length" name="petal_length" step="0.1" required class="form-input">
+            </div>
+            <div>
+                <label for="petal_width" class="form-label">Petal Width (cm)</label>
+                <input type="number" id="petal_width" name="petal_width" step="0.1" required class="form-input">
+            </div>
+            <button type="submit" class="form-button">Predict Species</button>
+        </form>
+    </div>
+</body>
+</html>

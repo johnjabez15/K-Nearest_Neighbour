@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Link to the external stylesheet located in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Main container using CSS classes for styling -->
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p class="description">The predicted species is:</p>
+        <p class="result-message text-2xl">
+            <span class="result-species">
+                <strong>{{ prediction }}</strong>
+            </span>
+        </p>
+        <!-- Button to go back to the home page -->
+        <a href="/" class="back-link">Predict another flower</a>
+    </div>
+</body>
+</html>
